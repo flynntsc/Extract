@@ -51,5 +51,5 @@
   - Control-Shift-Tab：转向上一个标签页
   - Command-加号或等号：放大页面
   - Command-减号：缩小页面 
+  
 ## Sublime Text
-- 
