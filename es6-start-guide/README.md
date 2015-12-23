@@ -755,6 +755,257 @@ for (let [key, value] of entries(obj)) {
 
 
 
+## 14. Generator 函数
+
+### 简介
+
+Generator函数是ES6提供的一种异步编程解决方案，可以理解成是一个状态机，封装了多个内部状态；还是一个遍历器对象生成函数，依次遍历Generator函数内部的每一个状态。
+
+两个特征：一是，function命令与函数名之间有一个星号；二是，函数体内部使用yield语句，定义不同的内部状态（yield语句在英语里的意思就是“产出”）。
+
+调用Generator函数后，该函数并不执行，而是一个指向内部状态的指针对象，也就是上一章介绍的遍历器对象（Iterator Object）。
+
+```
+// 注意星号位置，推荐写法    
+function* helloWorldGenerator() {
+  yield 'hello';
+  yield 'world';
+  return 'ending';
+}
+
+var hw = helloWorldGenerator();
+
+hw.next()
+// { value: 'hello', done: false }
+
+hw.next()
+// { value: 'world', done: false }
+
+hw.next()
+// { value: 'ending', done: true }
+
+hw.next()
+// { value: undefined, done: true }
+```
+
+
+一个函数里面，只能执行一次（或者说一个）return语句，但是可以执行多次（或者说多个）yield语句。
+
+```
+// 遍历器对象本身也有Symbol.iterator方法，执行后返回自身
+function* gen(){
+  // some code
+}
+
+var g = gen();
+
+g[Symbol.iterator]() === g
+// true
+```
+
+### next方法的参数
+
+next方法可以带一个参数，该参数就会被当作上一个yield语句的返回值。
+
+```
+function* foo(x) {
+  var y = 2 * (yield (x + 1));
+  var z = yield (y / 3);
+  return (x + y + z);
+}
+
+var a = foo(5);
+a.next() // Object{value:6, done:false}
+a.next() // Object{value:NaN, done:false}
+a.next() // Object{value:NaN, done:false}
+
+var b = foo(5);
+b.next() // { value:6, done:false }
+b.next(12) // { value:8, done:false }
+b.next(13) // { value:42, done:true }
+```
+
+如果想要第一次调用next方法时，就能够输入值，可以在Generator函数外面再包一层。
+
+```
+function wrapper(generatorFunction) {
+  return function (...args) {
+    let generatorObject = generatorFunction(...args);
+    generatorObject.next();
+    return generatorObject;
+  };
+}
+
+const wrapped = wrapper(function* () {
+  console.log(`First input: ${yield}`);
+  return 'DONE';
+});
+
+wrapped().next('hello!')
+// First input: hello!
+```
+
+
+向Generator函数内部输入值的例子
+
+```
+function* dataConsumer() {
+  console.log('Started');
+  console.log(`1. ${yield}`);
+  console.log(`2. ${yield}`);
+  return 'result';
+}
+
+let genObj = dataConsumer();
+genObj.next();
+// Started
+genObj.next('a')
+// 1. a
+genObj.next('b')
+// 2. b
+```
+
+
+
+### for...of循环
+
+```
+function *foo() {
+  yield 1;
+  yield 2;
+  yield 3;
+  yield 4;
+  yield 5;
+  return 6;
+}
+
+for (let v of foo()) {
+  console.log(v);
+}
+// 1 2 3 4 5
+// 注意不包括6
+```
+
+```
+// 利用Generator函数和for...of循环，实现斐波那契数列的例子
+function* fibonacci() {
+  let [prev, curr] = [0, 1];
+  for (;;) {
+    [prev, curr] = [curr, prev + curr];
+    yield curr;
+  }
+}
+
+for (let n of fibonacci()) {
+  if (n > 1000) break;
+  console.log(n);
+}
+```
+
+```
+// 各种遍历方式
+function* numbers () {
+  yield 1
+  yield 2
+  return 3
+  yield 4
+}
+
+[...numbers()] // [1, 2]
+
+Array.from(numbers()) // [1, 2]
+
+let [x, y] = numbers();
+x // 1
+y // 2
+
+for (let n of numbers()) {
+  console.log(n)
+}
+// 1
+// 2
+```
+
+利用for...of循环，可以写出遍历任意对象的方法
+
+```
+// 通过Generator函数objectEntries为它加上遍历器接口
+function* objectEntries(obj) {
+  let propKeys = Reflect.ownKeys(obj);
+
+  for (let propKey of propKeys) {
+    yield [propKey, obj[propKey]];
+  }
+}
+
+let jane = { first: 'Jane', last: 'Doe' };
+
+for (let [key, value] of objectEntries(jane)) {
+  console.log(`${key}: ${value}`);
+}
+// first: Jane
+// last: Doe
+```
+
+```
+// 将Generator函数加到对象的Symbol.iterator属性上面
+function* objectEntries() {
+  let propKeys = Object.keys(this);
+
+  for (let propKey of propKeys) {
+    yield [propKey, this[propKey]];
+  }
+}
+
+let jane = { first: 'Jane', last: 'Doe' };
+
+jane[Symbol.iterator] = objectEntries;
+
+for (let [key, value] of jane) {
+  console.log(`${key}: ${value}`);
+}
+// first: Jane
+// last: Doe
+```
+
+### Generator.prototype.throw()
+
+```
+var g = function* () {
+  while (true) {
+    try {
+      yield;
+    } catch (e) {
+      if (e != 'a') throw e;
+      console.log('内部捕获', e);
+    }
+  }
+};
+
+var i = g();
+i.next();
+
+try {
+  i.throw('a');
+  i.throw('b');
+} catch (e) {
+  console.log('外部捕获', e);
+}
+// 内部捕获 a
+// 外部捕获 b
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
