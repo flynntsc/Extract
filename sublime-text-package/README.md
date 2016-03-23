@@ -151,7 +151,7 @@ Less自动转Css
 
 > [Trimmer](https://packagecontrol.io/packages/Trimmer)
 
-清除多余空格。但还有必要吗？
+清除多余空格（可被格式化插件代替）
 
 > [Side​Bar​Folders](https://packagecontrol.io/packages/SideBarFolders)
 
