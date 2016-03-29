@@ -176,6 +176,9 @@ VS filter 所有结果
 - Array.prototype.values
 - Array.prototype.entries
 - Array.prototype[Symbol.iterator]
+- Array.prototype.reduce/Array.prototype.reduceRight 累加器
+
+function callbackfn(preValue,curValue,index,array){}
 
 ## 其他
 
