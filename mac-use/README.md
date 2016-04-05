@@ -1,6 +1,46 @@
-# 快捷键
+# Tools
 
-## Mac
+- Homebrew
+
+包管理工具
+
+- Homebrew Cask
+
+brew-cask 允许你使用命令行安装 OS X 应用。
+
+- iTerm2
+
+最常用的终端应用，是 Terminal 应用的替代品
+
+- Zsh
+
+一款功能强大终端（shell）软件，既可以作为一个交互式终端，也可以作为一个脚本解释器。
+
+- Oh My Zsh
+
+简化命令行操作
+
+- MacDown/mou
+
+markdown编辑器
+
+- CheatSheet
+
+CheatSheet 能够显示当前程序的快捷键列表，默认的快捷键是长按⌘
+
+- SourceTree
+
+Git 图形化客户端
+
+- Alfred
+
+不用鼠标键盘 + Workflows
+
+- Vimium 
+
+是Google Chrome 扩展，让你可以纯键盘操作 Chrome
+
+# Hotkey
 
 ![Mac按键图标](mac_keys.png)
 
@@ -51,5 +91,3 @@
   - Control-Shift-Tab：转向上一个标签页
   - Command-加号或等号：放大页面
   - Command-减号：缩小页面 
-  
-## Sublime Text
