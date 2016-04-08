@@ -40,6 +40,18 @@ Git 图形化客户端
 
 是Google Chrome 扩展，让你可以纯键盘操作 Chrome
 
+- [CheatSheet](https://www.cheatsheetapp.com/CheatSheet/)
+
+长按⌘键，查看该软件所有快捷键
+
+- [Dash](https://kapeli.com/dash)
+
+离线文档
+
+> [Licecap](http://www.cockos.com/licecap/)
+
+划定区域，快速制作gif
+
 # Hotkey
 
 ![Mac按键图标](mac_keys.png)
