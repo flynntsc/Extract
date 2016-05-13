@@ -45,19 +45,19 @@ Sass支持
 
 LESS支持
 
+> [HTML-CSS-JS Prettify](https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify)
+
+格式美化，包括html、css、js、json等，可保存自动触发。
+
+ - Cmd+Shift+H
+
 > [JsFormat](https://packagecontrol.io/packages/JsFormat)
 
-JS格式化。本人感受较为一般。有其他插件可代替。
+JS格式化（暂弃，其他代替）
 
 > [Autocomplete](https://packagecontrol.io/packages/All%20Autocomplete)
 
 可自动补缺当前文件甚至所有打开文件所含有的词。
-
-> [HTML-CSS-JS Prettify](https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify)
-
-格式美化，包括html、css、js、json。
-
- - Cmd+Shift+H
 
 > [Color Highlighter](https://packagecontrol.io/packages/Color%20Highlighter)
 
@@ -107,7 +107,7 @@ Nodejs开发必备、语法提示
 
 > [Javascript Beautify](https://packagecontrol.io/packages/Javascript%20Beautify)
 
-JS美化，默认保存自动生效
+JS美化（暂弃，其他代替）
 
 > [JavaScript Completions](https://packagecontrol.io/packages/JavaScript%20Completions)
 
