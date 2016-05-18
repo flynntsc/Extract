@@ -2,7 +2,6 @@
 
 ### Popular before page 11
 
-
 > [Package Control](https://packagecontrol.io/installation)
 
 安装插件必备，首要安装！
@@ -35,7 +34,7 @@ Sass支持
 
 颜色获取
 
- - cmd+shift+c
+`cmd+shift+c`
 
 > [DocBlockr](https://packagecontrol.io/packages/DocBlockr)
 
@@ -49,7 +48,7 @@ LESS支持
 
 格式美化，包括html、css、js、json等，可保存自动触发。
 
- - Cmd+Shift+H
+ `Cmd+Shift+H`
 
 > [JsFormat](https://packagecontrol.io/packages/JsFormat)
 
@@ -75,13 +74,13 @@ sublime编译环境，未用。
 
 在sublime中直接打开终端并进入当前文件或项目所在路径
 
- - cmd+shift+t
+ `cmd+shift+t`
 
 > [Trailing​Spaces](https://packagecontrol.io/packages/TrailingSpaces)
 
 多余空格高亮提示以及一键清除（清除其他必备插件可代替）
 
- - ctrl+alt+d
+ `ctrl+alt+d`
 
 > [Bootstrap 3 Snippets](https://packagecontrol.io/packages/Bootstrap%203%20Snippets)
 
@@ -91,7 +90,7 @@ Bootstrap 3提示
 
 css前缀补全，需nodejs
 
- - cmd+alt+p
+ `cmd+alt+p`
 
 > [File​Diffs](https://packagecontrol.io/packages/FileDiffs)
 
@@ -113,10 +112,6 @@ JS美化（暂弃，其他代替）
 
 语句提示，原声JS必备
 
-> [Java​Script​Next - ES6 Syntax](https://packagecontrol.io/packages/JavaScriptNext%20-%20ES6%20Syntax)
-
-ES6语法高亮
-
 > [SASS Snippets](https://packagecontrol.io/packages/SASS%20Snippets)
 
 SASS语法片段
@@ -125,13 +120,18 @@ SASS语法片段
 
 Eslint所需
 
+> [Babel](https://packagecontrol.io/packages/Babel)
+
+支持ES6、React JSX语法高亮 VS Java​Script​Next
+
+> [Java​Script​Next - ES6 Syntax](https://packagecontrol.io/packages/JavaScriptNext%20-%20ES6%20Syntax)
+
+ES6语法高亮
+
 > [ReactJS](https://packagecontrol.io/packages/ReactJS)
 
 React语法高亮+语法片段 **VS** Babel + React ES6 Snippets
 
-> [Babel](https://packagecontrol.io/packages/Babel)
-
-支持ES6、React JSX语法高亮
 
 > [React ES6 Snippets](https://packagecontrol.io/packages/React%20ES6%20Snippets)
 
@@ -156,4 +156,20 @@ Less自动转Css
 > [Side​Bar​Folders](https://packagecontrol.io/packages/SideBarFolders)
 
 项目过多，不好管理时可用 = 文件夹管理
+
+>[Origami](https://packagecontrol.io/packages/Origami)
+
+操纵sublime的窗口，各种分屏。
+
+>[FindKeyConflicts](https://packagecontrol.io/packages/FindKeyConflicts)
+
+找出冲突的快捷键以方便处理。
+
+>[Seti_UI](https://packagecontrol.io/packages/Seti_UI) 
+
+一个热门的主题推荐
+
+> [DashDoc](https://packagecontrol.io/packages/DashDoc)
+
+`ctrl+h` 选取单词调用dash查询文档。
 

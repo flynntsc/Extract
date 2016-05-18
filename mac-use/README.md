@@ -1,56 +1,19 @@
 # Tools
 
-- Homebrew
-
-包管理工具
-
-- Homebrew Cask
-
-brew-cask 允许你使用命令行安装 OS X 应用。
-
-- iTerm2
-
-最常用的终端应用，是 Terminal 应用的替代品
-
-- Zsh
-
-一款功能强大终端（shell）软件，既可以作为一个交互式终端，也可以作为一个脚本解释器。
-
-- Oh My Zsh
-
-简化命令行操作
-
-- MacDown/mou
-
-markdown编辑器
-
-- CheatSheet
-
-CheatSheet 能够显示当前程序的快捷键列表，默认的快捷键是长按⌘
-
-- SourceTree
-
-Git 图形化客户端
-
-- Alfred
-
-不用鼠标键盘 + Workflows
-
-- Vimium 
-
-是Google Chrome 扩展，让你可以纯键盘操作 Chrome
-
-- [CheatSheet](https://www.cheatsheetapp.com/CheatSheet/)
-
-长按⌘键，查看该软件所有快捷键
-
-- [Dash](https://kapeli.com/dash)
-
-离线文档
-
-> [Licecap](http://www.cockos.com/licecap/)
-
-划定区域，快速制作gif
+- Homebrew 包管理工具
+- Homebrew Cask brew-cask 允许你使用命令行安装 OS X 应用。
+- iTerm2 更为强大的终端应用，是 Terminal 应用的替代品
+- Zsh 一款功能强大终端（shell）软件，既可以作为一个交互式终端，也可以作为一个脚本解释器。
+- Oh My Zsh 简化命令行操作
+- MacDown/mou markdown编辑器
+- CheatSheet CheatSheet 能够显示当前程序的快捷键列表，默认的快捷键是长按⌘
+- SourceTree Git 图形化客户端
+- Alfred 不用鼠标键盘快速打开软件，另可结合Workflows做更多事情（==收费==）
+- [CheatSheet](https://www.cheatsheetapp.com/CheatSheet/) 长按⌘键，查看该软件所有快捷键
+- [Dash](https://kapeli.com/dash) 离线文档
+- [Licecap](http://www.cockos.com/licecap/) 划定区域，快速制作gif
+- [spectacleapp](https://www.spectacleapp.com/) 简易窗口管理工具，可分屏。
+- [bettertouchtool](https://www.boastr.net/) 强大的自定义命令操作（==收费==）
 
 # Hotkey
 
