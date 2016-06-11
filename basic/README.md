@@ -17,6 +17,7 @@
 - [JavaScript算法练习：Caesars Cipher](http://www.w3cplus.com/javascript/bonfire-caesars-cipher-solution.html)
 - [JavaScript算法练习：找出字符串中最长的单词并输出其长度](http://www.w3cplus.com/javascript/find-the-longest-word-solution.html)
 - [JavaScript算法练习：字尾确认](http://www.w3cplus.com/javascript/confirm-the-ending.html)
+- [也谈面试必备问题之 JavaScript 数组去重](http://web.jobbole.com/86360/)
 
 ***
 
