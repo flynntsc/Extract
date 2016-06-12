@@ -1,3 +1,10 @@
+# 原生
+
+- [六个漂亮的 ES6 技巧](https://www.h5jun.com/post/six-nifty-es6-tricks.html)
+- [类的装饰器：ES6 中优雅的 mixin 式继承](https://www.h5jun.com/post/mixin-in-es6.html)
+- [3 种不同的原型继承： ES6+ 版本](http://www.zcfy.cc/article/425)
+- [可以使用ES6取代的10个Lodash特性](http://www.w3cplus.com/javascript/lodash-features-replace-es6.html)
+
 # 算法
 - [JavaScript算法练习:取二维数组中最大值的几种方法](http://www.w3cplus.com/javascript/algorithm-return-largest-numbers-in-arrays.html)
 - [JavaScript中的随机数](http://www.w3cplus.com/javascript/rounding-recipes.html)
@@ -18,6 +25,7 @@
 - [JavaScript算法练习：找出字符串中最长的单词并输出其长度](http://www.w3cplus.com/javascript/find-the-longest-word-solution.html)
 - [JavaScript算法练习：字尾确认](http://www.w3cplus.com/javascript/confirm-the-ending.html)
 - [也谈面试必备问题之 JavaScript 数组去重](http://web.jobbole.com/86360/)
+- [JavaScript算法练习：重复字符串](http://www.w3cplus.com/javascript/repeat-string-javascript.html)
 
 ***
 
