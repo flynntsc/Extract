@@ -40,3 +40,16 @@
 - [函数式编程离我们有多远？](https://www.h5jun.com/post/functional-how-far.html)
 - [JavaScript 中的“纯函数”](https://www.h5jun.com/post/pure-function.html)
 - [高阶函数对系统的“提纯”](https://www.h5jun.com/post/higher-order-function-play-with-pure-function.html)
+
+# Github
+
+- [从0开始学习 GitHub 系列之「初识 GitHub」](https://zhuanlan.zhihu.com/p/21103336)
+- [从0开始学习 GitHub 系列之「加入 GitHub」](https://zhuanlan.zhihu.com/p/21113342)
+- [从0开始学习 GitHub 系列之「Git 速成」](https://zhuanlan.zhihu.com/p/21269318)
+- [从0开始学习 GitHub 系列之「Git 进阶」](https://zhuanlan.zhihu.com/p/21367056)
+- [从0开始学习 GitHub 系列之「向GitHub 提交代码」](https://zhuanlan.zhihu.com/p/21302347)
+
+
+# Http
+
+- [DNS 原理入门](http://www.ruanyifeng.com/blog/2016/06/dns.html)
