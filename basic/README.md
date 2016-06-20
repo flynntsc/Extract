@@ -53,3 +53,4 @@
 # Http
 
 - [DNS 原理入门](http://www.ruanyifeng.com/blog/2016/06/dns.html)
+- [Cookie与Session的区别-总结很好的文章](http://www.lai18.com/content/407204.html)
