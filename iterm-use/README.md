@@ -1,3 +1,5 @@
+> [Iterm2](https://www.iterm2.com/)
+
 # Hotkey
 
 ## 光标控制
