@@ -26,6 +26,7 @@
 - [JavaScript算法练习：字尾确认](http://www.w3cplus.com/javascript/confirm-the-ending.html)
 - [也谈面试必备问题之 JavaScript 数组去重](http://web.jobbole.com/86360/)
 - [JavaScript算法练习：重复字符串](http://www.w3cplus.com/javascript/repeat-string-javascript.html)
+- [JavaScript学习笔记：数组合并](http://www.w3cplus.com/javascript/merge-flatten-an-array-of-arrays-in-javascript.html)
 
 ***
 
@@ -36,6 +37,8 @@
 
 # 函数式编程
 
+- [数组的函数式编程](https://mulgore.github.io/2016/06/24/array-function/)
+- [Lodash入门介绍](http://www.w3cplus.com/javascript/lodash-intro.html)
 - [JS函数式编程指南](https://www.gitbook.com/book/llh911001/mostly-adequate-guide-chinese/details)
 - [函数式编程离我们有多远？](https://www.h5jun.com/post/functional-how-far.html)
 - [JavaScript 中的“纯函数”](https://www.h5jun.com/post/pure-function.html)
@@ -43,6 +46,7 @@
 
 # Github
 
+- [版本控制入门 – 搬进 Github](http://www.imooc.com/learn/390) 完整视频
 - [从0开始学习 GitHub 系列之「初识 GitHub」](https://zhuanlan.zhihu.com/p/21103336)
 - [从0开始学习 GitHub 系列之「加入 GitHub」](https://zhuanlan.zhihu.com/p/21113342)
 - [从0开始学习 GitHub 系列之「Git 速成」](https://zhuanlan.zhihu.com/p/21269318)

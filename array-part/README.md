@@ -12,12 +12,12 @@ arr.length; // 6
 ## 检测
 
 ```
-// ES5
+// ES6
 function isArray(obj) {
     return Array.isArray(obj);
 }
 
-// 
+// ES5
 function isArray(obj) {
 	return Object.prototype.toString.call(obj) === '[object Array]';
 }
