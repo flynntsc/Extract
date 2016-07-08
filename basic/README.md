@@ -5,6 +5,13 @@
 - [3 种不同的原型继承： ES6+ 版本](http://www.zcfy.cc/article/425)
 - [可以使用ES6取代的10个Lodash特性](http://www.w3cplus.com/javascript/lodash-features-replace-es6.html)
 
+
+# 源码
+
+- [前端JQuery系列](https://github.com/JsAaron/jQuery)
+- [Vue.js 源码学习笔记](http://jiongks.name/blog/vue-code-review/)
+- [Vue source code analysis 1.0.25](https://github.com/JsAaron/vue-analysis)
+
 # 算法
 - [JavaScript算法练习:取二维数组中最大值的几种方法](http://www.w3cplus.com/javascript/algorithm-return-largest-numbers-in-arrays.html)
 - [JavaScript中的随机数](http://www.w3cplus.com/javascript/rounding-recipes.html)
