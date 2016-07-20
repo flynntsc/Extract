@@ -230,6 +230,10 @@ function unique(arr) {
 function unique(arr) {
     return Array.from(new Set(arr))
 }
+// or
+function unique(arr) {
+    return [...new Set(arr)]
+}
 ```
 
 洗牌算法，从最后一个开始随机对换位置。
