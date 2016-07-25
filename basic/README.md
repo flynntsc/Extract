@@ -1,16 +1,19 @@
-# 原生
+# 基础
 
 - [前端开发基础－JavaScript（一）](https://mp.weixin.qq.com/s?__biz=MzI3MDE0MzAzMw==&mid=2652201865&idx=1&sn=0f68c26a66cb493ad06f6f51125674bd&scene=0&key=77421cf58af4a6531a2cf1395ce40b37d37a4f2c6920bb5e127fd6360930462fa1b51485869f06c1dbcd1278a573e950&ascene=0&uin=MjgwMDE1MDkwMA%3D%3D&devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.5+build(15F34)&version=11020201&pass_ticket=4qgG%2Fn7JGBNGKvkFNS5TtzbVGA1ynglVTLRbaTyPqyk3xCHU97%2Btpk%2BeXgxkZZZF)
 - [前端开发基础－JavaScript（二）](https://mp.weixin.qq.com/s?__biz=MzI3MDE0MzAzMw==&mid=2652201871&idx=1&sn=c3b440a87c212015371f365c1d2b6e01&scene=0&key=77421cf58af4a65356e0333a36991a496caec17b799b4733d9650d6192a7a503314c545bceffa8db4dd74393deb70e99&ascene=0&uin=MjgwMDE1MDkwMA%3D%3D&devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.5+build(15F34)&version=11020201&pass_ticket=4qgG%2Fn7JGBNGKvkFNS5TtzbVGA1ynglVTLRbaTyPqyk3xCHU97%2Btpk%2BeXgxkZZZF)
 - [前端开发基础－JavaScript（三）](https://mp.weixin.qq.com/s?__biz=MzI3MDE0MzAzMw==&mid=2652201874&idx=1&sn=f9c9bcb1505af641862c90e60069983c&scene=0&key=77421cf58af4a6534b710b07bf6d83c116a3b971b3669a550a203c092fc0f9e84baada403d822f0ab466b7e89eba521a&ascene=0&uin=MjgwMDE1MDkwMA%3D%3D&devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.5+build(15F34)&version=11020201&pass_ticket=4qgG%2Fn7JGBNGKvkFNS5TtzbVGA1ynglVTLRbaTyPqyk3xCHU97%2Btpk%2BeXgxkZZZF)
 - [前端开发基础－JavaScript（四）](https://mp.weixin.qq.com/s?__biz=MzI3MDE0MzAzMw==&mid=2652201877&idx=1&sn=8f137ebdd70f914983db4fe54dad1287&scene=0&key=77421cf58af4a653e7930d28c546a411d8f01e20abef66c37d81d4c4d19cd776fe425ea530115ea19f0fe900f1eca038&ascene=0&uin=MjgwMDE1MDkwMA%3D%3D&devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.5+build(15F34)&version=11020201&pass_ticket=4qgG%2Fn7JGBNGKvkFNS5TtzbVGA1ynglVTLRbaTyPqyk3xCHU97%2Btpk%2BeXgxkZZZF)
 
-***
+
+# ES6
 
 - [六个漂亮的 ES6 技巧](https://www.h5jun.com/post/six-nifty-es6-tricks.html)
 - [类的装饰器：ES6 中优雅的 mixin 式继承](https://www.h5jun.com/post/mixin-in-es6.html)
 - [3 种不同的原型继承： ES6+ 版本](http://www.zcfy.cc/article/425)
 - [可以使用ES6取代的10个Lodash特性](http://www.w3cplus.com/javascript/lodash-features-replace-es6.html)
+- [ES6中Arguments和Parameters用法解析](http://www.zcfy.cc/article/how-to-use-arguments-and-parameters-in-ecmascript-6-953.html)
+
 
 
 # 源码
