@@ -52,6 +52,10 @@
 - [别人家的面试题：自然数拆分求最大乘积](https://www.h5jun.com/post/integer-break.html)
 - [别人家的面试题：不可变数组快速范围求和](https://www.h5jun.com/post/range-sum-query-immutable.html)
 
+***
+
+- [Data structures implemented in JS](https://github.com/LukeLin/js-stl) 数据结构应用
+
 # 函数式编程
 
 - [数组的函数式编程](https://mulgore.github.io/2016/06/24/array-function/)
