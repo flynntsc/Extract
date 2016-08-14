@@ -220,3 +220,35 @@ pushStack: function (elems) {
 - 1、首先构建一个新的jQuery对象，因为constructor是指向构造器的，所以这里就等同于调用jQuery()方法了，返回了一个新的jQuery对象；
 - 2、然后用jQuery.merge语句把elems节点合并到新的jQuery对象上；
 - 3、最后给返回的新jQuery对象添加prevObject属性，我们看到prevObject其实还是当前jQuery的一个引用罢了，所以也就是为什么通过prevObject能取到上一个合集的原因了。
+
+## 理解观察者模式
+
+简单的实现例子：
+
+```
+var Observable = {
+  callbacks: [],
+  add: function(fn) {
+    this.callbacks.push(fn);
+  },
+  fire: function() {
+    this.callbacks.forEach(function(fn) {
+      fn();
+    })
+  }
+}
+
+// 使用add订阅
+Observable.add(function() {
+  alert(1)
+})
+
+Observable.add(function() {
+  alert(2)
+})
+
+// 发布
+Observable.fire(); // 1, 2
+```
+
+## Callbacks
