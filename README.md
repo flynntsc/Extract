@@ -13,6 +13,7 @@
 - [Mac使用整理](/mac-use)
 - [Sublime Text热门插件整理](/sublime-text-package)
 - [iterm2使用整理](/iterm-use)
+- [git常用命令整理](git-commands)
 
 # Note
 
