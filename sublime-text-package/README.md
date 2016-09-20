@@ -173,3 +173,6 @@ Less自动转Css
 
 `ctrl+h` 选取单词调用dash查询文档。
 
+> [SublimeTextTrans](https://github.com/vhanla/SublimeTextTrans)
+
+透明背景效果，仅限WIN
