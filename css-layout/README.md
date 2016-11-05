@@ -204,4 +204,33 @@
 }
 ```
 
+## 块垂直水平居中
 
+```html
+<div class="box">
+    <div class="bd">block</div>
+</div>
+```
+
+```css
+.box {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+.bd {
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    // 以下关键
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+```
+
+优点：容器内块宽高可不确定；可兼容IE；
