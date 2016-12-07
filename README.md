@@ -6,15 +6,16 @@
 - [大漠之JS学习笔记：数组](/array-part)
 - [Javascript正则概要整理](/javascript-regular)
 - [函数式编程相关](/functional-programming)
-- [javascript语言精粹摘录](javascript-the-good-parts)
+- [javascript语言精粹摘录](/javascript-the-good-parts)
 
 # Tools
 
 - [Mac使用整理](/mac-use)
 - [Sublime Text热门插件整理](/sublime-text-package)
 - [iterm2使用整理](/iterm-use)
-- [git常用命令整理](git-commands)
+- [git常用命令整理](/git-commands)
 
 # Note
 
 - [《Web全栈工程师的自我修养》读书笔记](/full-stack-web-developer) 
+- [《贺老的知乎Live面试》小记](hax-interview-live)
