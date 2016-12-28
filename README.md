@@ -18,5 +18,6 @@
 # Note
 
 - [《Web全栈工程师的自我修养》读书笔记](/full-stack-web-developer) 
-- [《贺老的知乎Live面试》小记](hax-interview-live)
+- [《贺老的知乎Live面试》小记](/hax-interview-live)
+- [《前端工程师的自我修养Live》](/FED-self-improvement)
 
