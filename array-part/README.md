@@ -268,3 +268,16 @@ Array.from(Array(100).keys());
 
 [...Array(100).keys()]
 ```
+
+扁平化多维数组
+
+```
+var arr = [1,3,4,5,[6,[0,1,5],9],[2,5,[1,5]],[5]]
+
+// 奇巧方法
+var r1 = arr.toString().split(',')
+var r2 = arr.join(',').split(',')
+
+// reduce 尾递归
+const r3 = arr => arr.reduce((a, b) => a.concat(Array.isArray(b) ? flatten(b) : b), []);
+```
