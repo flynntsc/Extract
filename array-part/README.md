@@ -239,17 +239,14 @@ function unique(arr) {
 洗牌算法，从最后一个开始随机对换位置。
 
 ```
-Array.prototype.shuffle = function() {
-    var input = this;
-    for (var i = input.length - 1; i >= 0; i--) {
-        var randomIndex = Math.floor(Math.random() * (i + 1));
-        var itemAtIndex = input[randomIndex];
-
-        input[randomIndex] = input[i];
-        input[i] = itemAtIndex;
-    }
-    return input;
-};
+Array.prototype.shuffle = function () {
+  const arr = this
+  for (let i = arr.length - 1; i >= 0; i--) {
+    const randomIndex = Math.random() * (i + 1) | 0;
+    [arr[randomIndex], arr[i]] = [arr[i], arr[randomIndex]]
+  }
+  return arr
+}
 ```
 
 创建一个长度为100的数组，并且每个元素的值等于它的下标
