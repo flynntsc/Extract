@@ -242,8 +242,8 @@ function unique(arr) {
 Array.prototype.shuffle = function () {
   const arr = this
   for (let i = arr.length - 1; i >= 0; i--) {
-    const randomIndex = Math.random() * (i + 1) | 0;
-    [arr[randomIndex], arr[i]] = [arr[i], arr[randomIndex]]
+    const j = Math.random() * (i + 1) | 0;
+    [arr[j], arr[i]] = [arr[i], arr[j]]
   }
   return arr
 }
