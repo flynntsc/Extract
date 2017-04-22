@@ -11,3 +11,4 @@
 - [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager) 项目管理，方便切换
 - [Sass](https://marketplace.visualstudio.com/items?itemName=robinbentley.sass-indented) Sass必须
 - [vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons) 目录文件图片美化，更清晰
+- [vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) Vue格式开发支持
