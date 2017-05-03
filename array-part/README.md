@@ -131,7 +131,13 @@ console.log(myArray.sort(dynamicSort('-age'))); // 按降序排列
 
 - Array.from(input,map,context) 
 
-主要用于将类似数组的对象[array-like object]和可遍历对象[iterable]）转为真正的数组
+主要用于将类似数组的对象[array-like object]和可遍历对象[iterable]）转为真正的数组 === 任何有length属性的对象，都可以通过Array.from方法转为数组
+
+```
+Array.from({ length: 3 });
+// [ undefined, undefined, undefined ]
+// 但[...({ length: 3 })]
+```
 
 - Array.of
 
@@ -272,9 +278,9 @@ Array.from(Array(100).keys());
 var arr = [1,3,4,5,[6,[0,1,5],9],[2,5,[1,5]],[5]]
 
 // 奇巧方法
-var r1 = arr.toString().split(',')
-var r2 = arr.join(',').split(',')
+var r1 = arr => arr.toString().split(',')
+var r2 = arr => arr.join(',').split(',')
 
 // reduce 尾递归
-const r3 = arr => arr.reduce((a, b) => a.concat(Array.isArray(b) ? flatten(b) : b), []);
+const r3 = arr => arr.reduce((a, b) => a.concat(Array.isArray(b) ? r3(b) : b), [])
 ```
