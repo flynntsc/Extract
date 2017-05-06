@@ -81,3 +81,5 @@
 - [DNS 原理入门](http://www.ruanyifeng.com/blog/2016/06/dns.html)
 - [Cookie与Session的区别-总结很好的文章](http://www.lai18.com/content/407204.html)
 - [JSON Web Tokens (JWT) 与 Sessions](http://www.zcfy.cc/article/json-web-tokens-jwt-vs-sessions-685.html)
+- [互联网协议入门（一）](http://www.ruanyifeng.com/blog/2012/05/internet_protocol_suite_part_i.html)
+- [互联网协议入门（二）](http://www.ruanyifeng.com/blog/2012/06/internet_protocol_suite_part_ii.html)
