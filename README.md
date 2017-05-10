@@ -20,6 +20,7 @@
 # Note
 
 - [《Web全栈工程师的自我修养》读书笔记](full-stack-web-developer/README.md) 
-- [《贺老的知乎Live面试》小记](hax-interview-live/README.md)
+- [《贺老的面试Live》](hax-interview-live/README.md)
 - [《前端工程师的自我修养Live》](FED-self-improvement/README.md)
+- [《一线大厂如何面试前端工程师Live》](bat-interview/README.md)
 
