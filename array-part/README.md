@@ -5,7 +5,7 @@
 JavaScript的数组的每一项可以保存任何类型的数据
 
 ```
-var arr = [35, "大漠", new Date(), function(){}, , null];
+var arr = [35, "Flyn", new Date(), function(){}, , null];
 arr.length; // 6
 ```
 
@@ -118,7 +118,7 @@ console.log(myArray.sort(dynamicSort('-age'))); // 按降序排列
 - Math.min.apply( Math, array )
 - Math.max(...arr)
 
-## 角度
+## 换个角度
 
 - 增加数组项方法：除了直接改变数组项的值和修改数组的length给数组添加数组项方法之外，还可以使用push()、unshift()、concat()和splice()添加数组项
 - 删除数组项方法：删除数组项方法有pop()、shift()、slice()和splice()方法
@@ -131,7 +131,7 @@ console.log(myArray.sort(dynamicSort('-age'))); // 按降序排列
 
 - Array.from(input,map,context) 
 
-主要用于将类似数组的对象[array-like object]和可遍历对象[iterable]）转为真正的数组 === 任何有length属性的对象，都可以通过Array.from方法转为数组
+主要用于将类似数组的对象[array-like object]和可遍历对象[iterable]）转为真正的数组 === 任何==有length属性==的对象，都可以通过Array.from方法转为数组
 
 ```
 Array.from({ length: 3 });
@@ -165,15 +165,120 @@ VS filter 所有结果
 - Array.prototype.values
 - Array.prototype.entries
 - Array.prototype[Symbol.iterator]
-- Array.prototype.reduce/Array.prototype.reduceRight 累加器
+- [Array.prototype.reduce](http://www.zcfy.cc/article/reduce-composing-software-javascript-scene-medium-2697.html)/Array.prototype.reduceRight 累加器，最为灵活
 
 function callbackfn(preValue,curValue,index,array){}
 
 ## 代码
 
-数组去重
+### [排序算法](http://javascript.ruanyifeng.com/library/sorting.html)
+
+**冒泡排序** - 简单但低效
+
+两两比较，大的放后
+
+```js
+function sort(arr) {
+    const l = arr.length
+    for (let i = 0; i < l; i++) {
+        for (let j = 0; j < l - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]
+            }
+        }
+    }
+    return arr
+}
+```
+
+**选择排序** - 低效
+
+依次跟后面的数比较一轮后，再与最小值对换
+
+```js
+function sort(arr) {
+    const l = arr.length
+    let min
+    for (let i = 0; i < l - 1; i++) {
+        min = i
+        for (let j = i + 1; j < l; j++) {
+            arr[min] > arr[j] && (min = j)
+        }
+        min !== i && ([arr[i], arr[min]] = [arr[min], arr[i]])
+    }
+    return arr
+}
+```
+
+**插入排序** - 低效
+
+将数组分成“已排序”和“未排序”，将后面一个元素从“未排序”部分插入“已排序”部分，从而“已排序”部分增加一个元素，“未排序”部分减少一个元素
 
 ```
+function sort(arr) {
+    const l = arr.length
+    let v, j
+    for (let i = 1; i < l; i++) {
+        v = arr[i]
+        for (j = i - 1; j >= 0 && arr[j] > v; j--) {
+            arr[j + 1] = arr[j]
+        }
+        arr[j + 1] = v
+    }
+    return arr
+}
+```
+
+**合并排序** - 广泛使用
+
+将数组拆开，分成n个只有一个元素的数组（递归），然后不断地两两合并，直到全部排序完成
+
+```js
+function merge(left, right) {
+    const res = []
+    let il = 0
+    let ir = 0
+    while (il < left.length && ir < right.length) {
+        left[il] < right[ir] ? res.push(left[il++]) : res.push(right[ir++])
+    }
+    return [...res, ...left.slice(il), ...right.slice(ir)]
+}
+
+// 简单版
+function sort(arr) {
+    const l = arr.length
+    if (arr.length < 2) return arr
+    const mid = l / 2 | 0
+    const left = arr.slice(0, mid)
+    const right = arr.slice(mid)
+    return merge(sort(left), sort(right))
+}
+// 改进版
+function sort(arr) {
+    const l = arr.length
+    if (arr.length < 2) return arr
+    const mid = l / 2 | 0
+    const left = arr.slice(0, mid)
+    const right = arr.slice(mid)
+    // 目的=>将原先的arr替换成排序后的arr
+    // 疑问=>arr=newArr也不行？多占用空间？效率低？
+    const newArr = merge(sort(left), sort(right))
+    newArr.unshift(0, l)
+    arr.splice.apply(arr, newArr)
+    return arr
+    // 因返回的是一个全新的数组，会多占用空间。
+    // 因此，修改上面的函数，使之在原地排序，不多占用空间
+    // 不理解ING ？？？
+}
+
+// 非递归方式？？？
+```
+
+**快速排序** - 公认最快
+
+### 数组去重
+
+```js
 <!-- 使用forEach()方法和indexOf()方法 -->
 Array.prototype.unique1 = function () {
     var newArray = [];
@@ -242,9 +347,11 @@ function unique(arr) {
 }
 ```
 
-洗牌算法，从最后一个开始随机对换位置。
+### 洗牌算法
 
-```
+从最后一个开始随机与前面的数对换位置
+
+```js
 Array.prototype.shuffle = function () {
   const arr = this
   for (let i = arr.length - 1; i >= 0; i--) {
@@ -255,26 +362,29 @@ Array.prototype.shuffle = function () {
 }
 ```
 
-创建一个长度为100的数组，并且每个元素的值等于它的下标
+### 创建数组
 
-```
-Array.from(
-  new Array(100),
-  (_, idx) => idx
-)
+创建0-99的数组
 
-'​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​'.split('').map(function (v, i) { return i; });
+```js
+Array.from(Array(100), (_, i) => i)
 
-Array(100).fill('naive').map(function (v, i) { return i; });
+Array.from({ length: 100 }, (_, i) => i)
 
-Array.from(Array(100).keys());
+Array.from(Array(100).keys())
+
+'​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​'.split('').map((_, i) => i)
+
+Array(100).fill('').map((_, i) => i)
 
 [...Array(100).keys()]
 ```
 
+### 降维数组
+
 扁平化多维数组
 
-```
+```js
 var arr = [1,3,4,5,[6,[0,1,5],9],[2,5,[1,5]],[5]]
 
 // 奇巧方法
