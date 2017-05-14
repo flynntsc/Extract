@@ -165,15 +165,19 @@ VS filter 所有结果
 - Array.prototype.values
 - Array.prototype.entries
 - Array.prototype[Symbol.iterator]
-- [Array.prototype.reduce](http://www.zcfy.cc/article/reduce-composing-software-javascript-scene-medium-2697.html)/Array.prototype.reduceRight 累加器，最为灵活
+- [Array.prototype.reduce](http://www.zcfy.cc/article/reduce-composing-software-javascript-scene-medium-2697.html)/Array.prototype.reduceRight 累加器，最为灵活强大
 
 function callbackfn(preValue,curValue,index,array){}
 
 ## 代码
 
-### [排序算法](http://javascript.ruanyifeng.com/library/sorting.html)
+### 排序算法
 
-**冒泡排序** - 简单但低效
+> [阮一峰js整理之排序算法](http://javascript.ruanyifeng.com/library/sorting.html)
+
+> [十大经典排序算法](https://github.com/hustcc/JS-Sorting-Algorithm)
+
+**冒泡排序** - 最简单但最低效
 
 两两比较，大的放后
 
@@ -191,7 +195,9 @@ function sort(arr) {
 }
 ```
 
-**选择排序** - 低效
+**选择排序** - O(n²) 
+
+不占用额外的内存空间，低效
 
 依次跟后面的数比较一轮后，再与最小值对换
 
@@ -214,7 +220,7 @@ function sort(arr) {
 
 将数组分成“已排序”和“未排序”，将后面一个元素从“未排序”部分插入“已排序”部分，从而“已排序”部分增加一个元素，“未排序”部分减少一个元素
 
-```
+```js
 function sort(arr) {
     const l = arr.length
     let v, j
@@ -244,7 +250,7 @@ function merge(left, right) {
     return [...res, ...left.slice(il), ...right.slice(ir)]
 }
 
-// 简单版
+// 简易版
 function sort(arr) {
     const l = arr.length
     if (arr.length < 2) return arr
@@ -253,8 +259,8 @@ function sort(arr) {
     const right = arr.slice(mid)
     return merge(sort(left), sort(right))
 }
-// 改进版
-function sort(arr) {
+// 空间改进版
+function sort2(arr) {
     const l = arr.length
     if (arr.length < 2) return arr
     const mid = l / 2 | 0
@@ -271,10 +277,35 @@ function sort(arr) {
     // 不理解ING ？？？
 }
 
-// 非递归方式？？？
+// 迭代方式 ？？？
 ```
 
 **快速排序** - 公认最快
+
+先确定一个“支点”（pivot），将所有小于“支点”的值都放在该点的左侧，大于“支点”的值都放在该点的右侧，然后对左右两侧不断重复这个过程，直到所有排序完成。
+
+```js
+function partition(arr, i, j) {
+    const pivot = arr[(i + j) / 2 | 0]
+    while (i <= j) {
+        while (arr[i] < pivot) i += 1
+        while (arr[j] > pivot) j -= 1
+        if (i <= j) {
+            [arr[i], arr[j]] = [arr[j], arr[i]]
+            i += 1
+            j -= 1
+        }
+    }
+    return i
+}
+
+function sort(arr, i = 0, j = arr.length - 1) {
+    const k = partition(arr, i, j)
+    if (i < k - 1) sort(arr, i, k - 1)
+    if (k < j) sort(arr, k, j)
+    return arr
+}
+```
 
 ### 数组去重
 
