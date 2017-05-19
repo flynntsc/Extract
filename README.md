@@ -8,6 +8,7 @@
 - [Javascript正则概要整理](javascript-regular/README.md)
 - [函数式编程相关](functional-programming/README.md)
 - [javascript语言精粹摘录](javascript-the-good-parts/README.md)
+- [web前端性能优化小结](web-speed/README.md)
 
 # Tools
 
