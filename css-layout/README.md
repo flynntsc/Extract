@@ -4,7 +4,7 @@
 
 
 ```html
-<!-- 最简，但main放最后较不友好 -->
+<!-- 最简，但main放最后较不友好，且高度各自独立 -->
 <div class="container">
     <div class="left">left</div>
     <div class="right">right</div>
@@ -13,8 +13,9 @@
 ```
 
 ```css
+/* 或其他去除浮动方法 */
 .container{
-    overflow: hidden;// 或其他去除浮动方法
+    overflow: hidden;
 }
 .left {
     float: left;
@@ -41,7 +42,8 @@
 
 ```css
 .container{
-    overflow: hidden;// 或其他去除浮动方法
+    overflow: hidden;
+    padding: 0 200px 0 100px;
 }
 .main{
     width: 100%;
@@ -163,10 +165,8 @@
 ```css
 .container {
     display: table;
-    // display: inline-table;
 }
 .left {
-    width: 1%;
     white-space: nowrap;
 }
 .main {
@@ -174,7 +174,6 @@
     width: 100%;
 }
 .right {
-    width: 1%;
     white-space: nowrap;
 }
 ```
@@ -213,6 +212,7 @@
 ```
 
 ```css
+/* 优点：容器内块宽高可不确定；可兼容IE；*/
 .box {
     position: relative;
     width: 100%;
@@ -223,7 +223,7 @@
     height: 50px;
     line-height: 50px;
     text-align: center;
-    // 以下关键
+    /* 以下关键 */
     position: absolute;
     top: 0;
     right: 0;
@@ -232,5 +232,3 @@
     margin: auto;
 }
 ```
-
-优点：容器内块宽高可不确定；可兼容IE；
