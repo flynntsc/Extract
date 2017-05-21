@@ -92,6 +92,10 @@ console.log(myArray.sort(dynamicSort('-age'))); // 按降序排列
  - 负数 = arr.length - num
 - lastIndexOf() 从后往前查
 
+```js
+arr.indexOf(v) === arr.lastIndexOf(v) ? '唯一' : '重复'
+```
+
 ## 迭代
 
 
@@ -424,4 +428,37 @@ var r2 = arr => arr.join(',').split(',')
 
 // reduce 尾递归
 const r3 = arr => arr.reduce((a, b) => a.concat(Array.isArray(b) ? r3(b) : b), [])
+```
+
+### 莱文斯坦距离
+
+> [Wiki](http://en.wikipedia.org/wiki/Levenshtein_distance)
+
+>[js的实现](https://rosettacode.org/wiki/Levenshtein_distance#ES5)
+
+>[在Regularjs中的使用](https://leeluolee.github.io/2014/10/21/how-ls-help-you-diff-two-array/)
+
+又称Levenshtein距离，是编辑距离的一种。指两个字串之间，由一个转成另一个所需的最少编辑操作次数。许可的编辑操作包括将一个字符替换成另一个字符，插入一个字符，删除一个字符。
+
+![ld算法](http://upload.wikimedia.org/math/d/4/f/d4f80cafb626ae9d9b8dc748360f61ec.png)
+
+```js
+function levenshtein(x, y) {
+    const m = x.length
+    const n = y.length
+    if (x === y) return 0
+    if (!m) return n
+    if (!n) return m
+    let a = [...Array(m + 1).keys()]
+    let b = []
+    for (let i = 0; i < n; i++) {
+        b[0] = i + 1
+        for (let j = 0; j < m; j++) {
+            const k = y.charAt(i) === x.charAt(j) ? 0 : 1
+            b[j + 1] = Math.min(b[j] + 1, a[j + 1] + 1, a[j] + k)
+        }
+        [a, b] = [b, a]
+    }
+    return a[m]
+}
 ```
