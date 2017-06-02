@@ -430,6 +430,29 @@ var r2 = arr => arr.join(',').split(',')
 const r3 = arr => arr.reduce((a, b) => a.concat(Array.isArray(b) ? r3(b) : b), [])
 ```
 
+### 全排列
+
+> [JS全排列的7种算法总结](http://www.lingchenliang.com/post/134.html)
+
+```js
+/*  
+全排列（递归链接）算法  
+1、设定源数组为输入数组，结果数组存放排列结果（初始化为空数组）；  
+2、逐一将源数组的每个元素链接到结果数组中（生成新数组对象）；  
+3、从原数组中删除被链接的元素（生成新数组对象）；  
+4、将新的源数组和结果数组作为参数递归调用步骤2、3，直到源数组为空，则输出一个排列。  
+*/
+function perm(arr, res = []) {
+    (function fn(arr, temp = []) {
+        if (!arr.length) return res.push(temp.join(''))
+        for (let i of arr.keys()) {
+            fn(arr.slice(0, i).concat(arr.slice(i + 1)), temp.concat(arr[i]))
+        }
+    })(arr)
+    return res
+}
+```
+
 ### 莱文斯坦距离
 
 > [Wiki](http://en.wikipedia.org/wiki/Levenshtein_distance)
