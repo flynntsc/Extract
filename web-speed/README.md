@@ -1,7 +1,7 @@
 ## 工具
 - [谷歌速度测试与优化建议](https://developers.google.com/speed/pagespeed/insights/)
-- [速度评分](gtmetrix.com)
-- [页面测试](www.webpagetest.org)
+- [速度评分](https://gtmetrix.com/)
+- [页面测试](http://www.webpagetest.org)
 
 ## 应用性能三要素
 
