@@ -14,7 +14,7 @@
 
 - [Mac使用整理](mac-use/README.md)
 - [Sublime Text热门插件整理](sublime-text-package/README.md)
-- [vscode编辑器使用整理](vsc-use/README.md)
+- [vscode编辑器使用整理](vscode-use/README.md)
 - [iterm2使用整理](iterm-use/README.md)
 - [git常用命令整理](git-commands/README.md)
 
