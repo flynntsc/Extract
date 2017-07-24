@@ -3,12 +3,14 @@
 ### Common
 
 - [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify) 美化javascript, JSON, CSS, Sass, HTML，可设置为保存自动美化
+- [Prettier - JavaScript formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) Prettier格式化美化工具
 - [vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons) 目录文件图片美化，更清晰
 - [Dash](https://marketplace.visualstudio.com/items?itemName=deerawan.vscode-dash) 快速在dash中查询；快捷键：ctrl + h、ctrl + alt + h
 - [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) 可在chrome直接调试
 - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) 路径自动补全
 - [Path Autocomplete](https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete) 路径自动补全
 - [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager) 项目管理，方便切换
+- [Git History (git log)](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory) Git历史查看加强
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) 丰富的git日志插件
 - [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer) 让括号拥有独立的颜色，易于区分
 
