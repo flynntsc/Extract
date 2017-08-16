@@ -4,14 +4,14 @@
 
 JavaScript的数组的每一项可以保存任何类型的数据
 
-```
+```js
 var arr = [35, "Flyn", new Date(), function(){}, , null];
 arr.length; // 6
 ```
 
 ## 检测
 
-```
+```js
 // ES6
 function isArray(obj) {
     return Array.isArray(obj);
@@ -36,7 +36,7 @@ function isArray(obj) {
 
 默认调用toString()再按UNICODE进行比较排序。
 
-```
+```js
 const arr = [1, 3, 5, 7, 6, 4, 2, 9];
 
 // 大小正/反排序
@@ -52,7 +52,7 @@ function randomSort(a, b) {
 arr.sort(randomSort);
 ```
 
-```
+```js
 // 对象数组的排序
 function dynamicSort(property) {
     var sortOrder = 1;
@@ -71,25 +71,25 @@ console.log(myArray.sort(dynamicSort('-age'))); // 按降序排列
 
 - arr.reverse()
 
-## 方法1
+## 方法
 
 
-- concat(args)
- - concat(1,2,3);concat([1,2],[3])
- - 不改变原数组 VS push()改变并返回原数组
- - concat(arr,arr) 降维
+* concat(args)
+  - concat(1,2,3);concat([1,2],[3])
+  - 不改变原数组 VS push()改变并返回原数组
+  - concat(arr,arr) 降维
 - slice(s,e)
- - 不改变原数组
- - s开始位置（包括），e结束位置 （不包括）
- - 正向0，1，2...;反向-1,-2,-3...;
+  - 不改变原数组
+  - s开始位置（包括），e结束位置 （不包括）
+  - 正向0，1，2...;反向-1,-2,-3...;
 - splice(pos,num,args) 
- - 最强大？删除、插入、替换
- - 更改原数组并返回被删除的数组
- - pos为插入的起始位置，num为要删除的数量，args要插入的数组项
- - num为0即为插入
+  - 最强大？删除、插入、替换
+  - 更改原数组并返回被删除的数组
+  - pos为插入的起始位置，num为要删除的数量，args要插入的数组项
+  - num为0即为插入
 - arr.indexOf(searchElement[, fromIndex = 0])
- - 查询所在位置num/-1
- - 负数 = arr.length - num
+  - 查询所在位置num/-1
+  - 负数 = arr.length - num
 - lastIndexOf() 从后往前查
 
 ```js
@@ -100,19 +100,19 @@ arr.indexOf(v) === arr.lastIndexOf(v) ? '唯一' : '重复'
 
 
 - forEach()
- - 循环遍历类似for
- - forEach(callback(value, index, array) {})
+  - 循环遍历类似for
+  - forEach(callback(value, index, array) {})
 - every()
- - 测试数组的每个元素是否都符合指定函数条件的存在
- - 自身返回true/false
+  - 测试数组的每个元素是否都符合指定函数条件的存在
+  - 自身返回true/false
 - some()
- - 测试数组含有符合指定函数条件的元素的存在
- - 自身返回true/false
+  - 测试数组含有符合指定函数条件的元素的存在
+  - 自身返回true/false
 - filter()
- - 经callback条件判断过滤出新数组
- - callback必然是判断return true
+  - 经callback条件判断过滤出新数组
+  - callback必然是判断return true
 - map()
- - 经过callback筛选出符合条件的并组成新数组
+  - 经过callback筛选出符合条件的并组成新数组
 
 ## 最大最小值
 
@@ -137,7 +137,7 @@ arr.indexOf(v) === arr.lastIndexOf(v) ? '唯一' : '重复'
 
 主要用于将类似数组的对象[array-like object]和可遍历对象[iterable]）转为真正的数组 === 任何==有length属性==的对象，都可以通过Array.from方法转为数组
 
-```
+```js
 Array.from({ length: 3 });
 // [ undefined, undefined, undefined ]
 // 但[...({ length: 3 })]
