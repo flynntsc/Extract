@@ -24,7 +24,7 @@
 
 **TTSR**
 
-是开始渲染时间，指某些非空元素开始在浏览器显示时的时间。
+是开始渲染时间，指某些非空元素开始在浏览器显示时的时间。（Chrome可通过chrome.loadTimes().firstPaintTime获取；IE9+可以通过performance.timing.msFirstPaint获取）
 
 1. 优化TTFB
 2. 会阻塞页面渲染的js放后
