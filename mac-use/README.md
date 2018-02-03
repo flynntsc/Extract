@@ -5,7 +5,7 @@
 - iTerm2 更为强大的终端应用，是 Terminal 应用的替代品
 - Zsh 一款功能强大终端（shell）软件，既可以作为一个交互式终端，也可以作为一个脚本解释器。
 - Oh My Zsh 简化命令行操作
-- MacDown/mou markdown编辑器
+- [作业部落](https://www.zybuluo.com) > MacDown/mou markdown编辑器
 - CheatSheet CheatSheet 能够显示当前程序的快捷键列表，默认的快捷键是长按⌘
 - SourceTree Git 图形化客户端
 - Alfred 不用鼠标键盘快速打开软件，另可结合Workflows做更多事情（==收费==）
