@@ -11,9 +11,11 @@
 - Alfred 不用鼠标键盘快速打开软件，另可结合Workflows做更多事情（==收费==）
 - [CheatSheet](https://www.cheatsheetapp.com/CheatSheet/) 长按⌘键，查看该软件所有快捷键
 - [Dash](https://kapeli.com/dash) 离线文档
-- [Licecap](http://www.cockos.com/licecap/) 划定区域，快速制作gif
+- [Licecap](http://www.cockos.com/licecap/) / picgif 划定区域，快速制作gif
 - [spectacleapp](https://www.spectacleapp.com/) 简易窗口管理工具，可分屏。
 - [bettertouchtool](https://www.boastr.net/) 强大的自定义命令操作（==收费==）
+- transmit(需破解) > filezilla FTP软件
+- [synergy](https://symless.com/synergy) 一套鼠标键盘控制多台设备
 
 # Hotkey
 
