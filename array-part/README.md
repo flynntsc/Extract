@@ -145,7 +145,12 @@ Array.from({ length: 3 });
 
 - Array.of
 
-将一组值转换为数组,基本用来代替Array()、new Array()；但[]?
+解决了构造函数方法创建数组时单个数字引起了怪异行为
+
+```
+const a = new Array(3);   // (3) [empty × 3] 构造函数方法单个数组会被用于数组长度
+const b = Array.of(3);    // [3]
+```
 
 - Array.prototype.copyWithin(target, start = 0, end = this.length)
 
